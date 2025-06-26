@@ -1,50 +1,60 @@
 import Link from 'next/link'
 import React from 'react'
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaTiktok} from "react-icons/fa";
-
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaTiktok } from "react-icons/fa";
 
 const Buttons = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center px-4">
+      {/* grid 1 */}
+      <div className='flex flex-wrap justify-center gap-4 mt-14 sm:mt-20 w-full'>
+        {/* Facebook */}
+        <Link
+          href="/facebook"
+          className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center"
+        >
+          <FaFacebook className='text-blue-700 text-[26px]' />
+          <span className="text-sm sm:text-base">facebook.com</span>
+        </Link>
 
-        {/* grid 1 */}
+        {/* Instagram */}
+        <Link
+          href="/instagram"
+          className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center"
+        >
+          <FaInstagram className='text-pink-500 text-[26px]' />
+          <span className="text-sm sm:text-base">instagram.com</span>
+        </Link>
 
-    <div className='flex flex-wrap justify-center gap-4 mt-20'>
-      {/* Facebook */}
-      <Link href="/facebook"  className="flex items-center gap-2 bg-lime-100 px-8 py-4 rounded-md shadow">
-    <FaFacebook className='text-blue-700 text-[26px]' />
-    <span>facebook.com</span>
-  </Link>
+        {/* Youtube */}
+        <Link
+          href="/youtube"
+          className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center"
+        >
+          <FaYoutube className='text-red-600 text-[26px]' />
+          <span className="text-sm sm:text-base">youtube.com</span>
+        </Link>
+      </div>
 
-  {/* Instagram */}
-      <Link href="/instagram"  className="flex items-center gap-2 bg-lime-100 px-8 py-4 rounded-md shadow">
-    <FaInstagram className='text-pink-500 text-[26px]'/>
-    <span>instagram.com</span>
-  </Link>
+      {/* grid 2 */}
+      <div className='flex flex-wrap justify-center gap-4 mt-4 sm:mt-8 w-full'>
+        {/* Twitter */}
+        <Link
+          href="/twitter"
+          className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center"
+        >
+          <FaTwitter className='text-blue-500 text-[26px]' />
+          <span className="text-sm sm:text-base">twitter.com</span>
+        </Link>
 
-  {/* Youtube */}
-      <Link href="/youtube"  className="flex items-center gap-2 bg-lime-100 px-8 py-4 rounded-md shadow">
-    <FaYoutube className='text-red-600 text-[26px]'/>
-    <span>youtube.com</span>
-  </Link>
-
-    </div>
-
-    {/* grid 2 */}
-
-    <div className='flex flex-wrap justify-center gap-4 mt-8'>
-         {/* Twitter */}
-      <Link href="/twitter"  className="flex items-center gap-2 bg-lime-100 px-8 py-4 rounded-md shadow">
-    <FaTwitter className='text-blue-500 text-[26px]'/>
-    <span>twitter.com</span>
-  </Link>
-
-  {/* Tiktok */}
-      <Link href="/tiktok"  className="flex items-center gap-2 bg-lime-100 px-8 py-4 rounded-md shadow">
-    <FaTiktok className='text-black text-[26px]'/>
-    <span>tiktok.com</span>
-  </Link>
-        </div>
+        {/* Tiktok */}
+        <Link
+          href="/tiktok"
+          className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center"
+        >
+          <FaTiktok className='text-black text-[26px]' />
+          <span className="text-sm sm:text-base">tiktok.com</span>
+        </Link>
+      </div>
     </div>
   )
 }

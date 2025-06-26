@@ -1,27 +1,24 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaTiktok } from "react-icons/fa";
 
 const TiktokButtons = () => {
   return (
     <div>
-      <div className="flex flex-wrap justify-center gap-8 mt-20">
+      <div className='flex flex-wrap justify-center gap-4 mt-14 sm:mt-20 w-full'>
         {/* Tiktok */}
-        <Link
-          href="#"
-          className="flex items-center gap-2 bg-lime-100 px-8 py-4 rounded-md shadow"
-        >
-          <FaTiktok className="text-black text-[26px]" />
-          <span>Tiktok.com</span>
-        </Link>
+         <div className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center">
+           <Image src='/tiktok.png' alt='' width={30} height={30}/>
+          <span className="text-sm sm:text-base">Tiktok.com</span>
+        </div>
 
         {/* Tiktok mp3 */}
         <Link
           href="/tiktok_mp3"
-          className="flex items-center gap-2 bg-lime-100 px-8 py-4 rounded-md shadow"
+          className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center"
         >
-          <FaTiktok className="text-black text-[26px]" />
-          <span>Tiktok mp3</span>
+           <Image src='/tiktokmp3.jpg' alt='' width={30} height={30} className="rounded-lg"/>
+          <span className="text-sm sm:text-base">Tiktok mp3</span>
         </Link>
       </div>
     </div>

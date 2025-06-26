@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-import { Syne } from 'next/font/google'
+import { Poppins } from 'next/font/google';
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-const syne = Syne({
+const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-syne',
-})
+  variable: '--font-poppins',
+});
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,9 +35,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${syne.variable}`}>
+    <html lang="en" className={`${poppins.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-syne`}
+         className={`${geistSans.variable} ${geistMono.variable} antialiased font-poppins`}
       >
         <Header/>
         {children}
