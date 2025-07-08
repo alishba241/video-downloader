@@ -1,4 +1,5 @@
 import React from 'react'
+import FacebookButton from '../facebook/fb-btns'
 
 const page = () => {
   return (
@@ -25,6 +26,8 @@ const page = () => {
         </button>
       </div>
     </div>
+     {/* fb video downloading buttons */}
+      <FacebookButton />
     </div>
   )
 }

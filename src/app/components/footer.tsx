@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -7,8 +8,15 @@ const Footer = () => {
       <footer className="bg-white text-gray-800 py-8 mt-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
           <div>
-            <h1 className="text-2xl font-bold mb-2 text-black">Brand Name</h1>
-          </div>
+ <Link href="/">
+<Image
+  src="/logo.png"
+  alt=""
+  width={250}
+  height={250}
+  className="w-[150px] md:w-[250px] h-auto"
+/>
+        </Link>          </div>
 
           <div>
             <ul className="space-y-2 text-sm sm:text-[15px]">

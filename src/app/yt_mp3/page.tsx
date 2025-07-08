@@ -1,4 +1,5 @@
 import React from "react";
+import YoutubeButtons from "../youtube/yt-btns";
 
 const page = () => {
   return (
@@ -25,6 +26,8 @@ const page = () => {
         </button>
       </div>
     </div>
+    {/* youtube video downloading buttons */}
+      <YoutubeButtons />
     </div>
   );
 };

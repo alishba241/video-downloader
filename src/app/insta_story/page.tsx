@@ -1,4 +1,5 @@
 import React from 'react'
+import InstaButtons from '../instagram/insta-btns'
 
 const page = () => {
   return (
@@ -25,7 +26,8 @@ const page = () => {
         </button>
       </div>
     </div>
-
+ {/* Insta video downloading buttons */}
+      <InstaButtons />
     </div>
   )
 }

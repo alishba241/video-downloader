@@ -1,4 +1,5 @@
 import React from 'react'
+import TiktokButtons from '../tiktok/tik-btns'
 
 const page = () => {
   return (
@@ -25,6 +26,8 @@ const page = () => {
         </button>
       </div>
     </div>
+    {/* tiktok video downloading buttons*/}
+      <TiktokButtons />
     </div>
   )
 }
