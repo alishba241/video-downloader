@@ -20,7 +20,7 @@ export default function ExtraFeatures() {
         <div className="flex justify-center">
           <Image
             src="/feature1.jpg" 
-            alt=""
+            alt="feature1"
             width={400}
             height={400}
             className="w-80 h-auto"
@@ -40,7 +40,7 @@ export default function ExtraFeatures() {
         <div className="flex justify-center">
           <Image
             src="/feature2.jpg" 
-            alt=""
+            alt="feature2"
             width={400}
             height={400}
             className="w-80 h-auto"

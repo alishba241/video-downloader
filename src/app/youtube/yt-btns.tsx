@@ -17,14 +17,14 @@ const YoutubeButtons = () => {
   {/* youtube mp3 */}
       <Link href="/yt_mp3"  
           className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center">
-     <Image src='/Youtube_Music.png' alt='' width={26} height={26}/>
+     <Image src='/Youtube_Music.png' alt='Youtube Music' width={26} height={26}/>
     <span className="text-sm sm:text-base">Youtube mp3</span>
   </Link>
 
   {/* Youtube shorts*/}
       <Link href="/yt_shorts" 
        className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center">
-      <Image src='/Youtube_shorts.png' alt='' width={20} height={20}/>
+      <Image src='/Youtube_shorts.png' alt='Youtube shorts' width={20} height={20}/>
     <span className="text-sm sm:text-base">Youtube Shorts</span>
   </Link>
 

@@ -20,7 +20,7 @@ const InstaButtons = () => {
           href="/insta_photo"
           className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center"
         >
-          <Image src='/instaphoto.png' alt='' width={32} height={32}/>
+          <Image src='/instaphoto.png' alt='instagram photo' width={32} height={32}/>
           <span className="text-sm sm:text-base">Instagram Photo</span>
         </Link>
 
@@ -29,7 +29,7 @@ const InstaButtons = () => {
           href="/insta_reel"
           className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center"
         >
-          <Image src='/instareel.png' alt='' width={30} height={30}/>
+          <Image src='/instareel.png' alt='instagram reel' width={30} height={30}/>
           <span className="text-sm sm:text-base">Instagram Reel</span>
         </Link>
 
@@ -38,7 +38,7 @@ const InstaButtons = () => {
           href="/insta_story"
           className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center"
         >
-           <Image src='/instastory.png' alt='' width={36} height={36}/>
+           <Image src='/instastory.png' alt='instagram story' width={36} height={36}/>
           <span className="text-sm sm:text-base">Instagram Story</span>
         </Link>
       </div>

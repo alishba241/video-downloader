@@ -11,12 +11,13 @@ const Footer = () => {
  <Link href="/">
 <Image
   src="/logo.png"
-  alt=""
+  alt="logo"
   width={250}
   height={250}
   className="w-[150px] md:w-[250px] h-auto"
 />
-        </Link>          </div>
+        </Link>         
+        </div>
 
           <div>
             <ul className="space-y-2 text-sm sm:text-[15px]">
@@ -34,15 +35,18 @@ const Footer = () => {
               <li><Link href="/insta_photo" className="hover:underline">Instagram photos</Link></li>
               <li><Link href="/insta_reel" className="hover:underline">Instagram reels</Link></li>
               <li><Link href="/insta_story" className="hover:underline">Instagram stories</Link></li>
+               <li><Link href="/facebook" className="hover:underline">Facebook</Link></li>
+              <li><Link href="/facebook_reels" className="hover:underline">Facebook reels</Link></li>
             </ul>
           </div>
 
           <div>
             <ul className="space-y-2 text-sm sm:text-[15px]">
-              <li><Link href="/facebook" className="hover:underline">Facebook</Link></li>
-              <li><Link href="/facebook_reels" className="hover:underline">facebook reels</Link></li>
+             
               <li><Link href="/twitter" className="hover:underline">Twitter</Link></li>
               <li><Link href="/blog" className="hover:underline">Blogs</Link></li>
+              <li><Link href="/terms_of_service" className="hover:underline">Terms of Service</Link></li>
+              <li><Link href="/contact_us" className="hover:underline">Contact Us</Link></li>
             </ul>
           </div>
 

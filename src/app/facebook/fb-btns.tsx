@@ -20,7 +20,7 @@ const FacebookButton = () => {
           href="/facebook_reels"
           className="flex items-center gap-2 bg-lime-100 px-6 sm:px-8 py-3 sm:py-4 rounded-md shadow w-[70%] sm:w-auto justify-center"
         >
-           <Image src='/facebookreels.png' alt='' width={30} height={30}/>
+           <Image src='/facebookreels.png' alt='facebook reels' width={30} height={30}/>
           <span className="text-sm sm:text-base">facebook Reels</span>
         </Link>
       </div>
