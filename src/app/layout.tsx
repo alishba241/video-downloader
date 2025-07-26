@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-import { Poppins } from 'next/font/google';
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-const poppins = Poppins({
+import { Syne } from 'next/font/google'
+
+const syne = Syne({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
-});
+  variable: '--font-syne',
+})
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,6 +27,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Free Online Video Downloader - Download HD Videos Fast",
   description: "Download videos from YouTube , Facebook , TikTok & more in HD with our free online video downloader. Fast , secure & no app required. Try it now!",
+  icons: {
+    icon: "/favicon.png?v=2",
+  }
 };
 
 export default function RootLayout({
@@ -34,11 +38,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable}`}>
+    <html lang="en" className={`${syne.variable}`}>
       <body
-         className={`${geistSans.variable} ${geistMono.variable} antialiased font-poppins`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-syne`}
       >
-        <Header/>
+        {/* <Header/> */}
         {children}
         <Footer/>
       </body>

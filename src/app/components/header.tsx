@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 
 const navLinks = ["Youtube", "Facebook", "Instagram", "Twitter", "Tiktok", "Blog"];
 const links = ["youtube", "facebook", "instagram", "twitter", "tiktok", "blog"];
@@ -15,13 +14,9 @@ const Header = () => {
       <div className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-2xl text-white py-6 px-6 sm:px-10 md:px-20 flex justify-between items-center">
         {/* Brand Name */}
         <Link href="/">
-<Image
-  src="/logo.png"
-  alt="logo"
-  width={250}
-  height={250}
-  className="w-[150px] md:w-[250px] h-auto"
-/>
+<h1 className='text-[22px] md:text-[32px] font-bold text-lime-500'>
+  SaveFrom Pro
+</h1>
         </Link>
 
         {/* Desktop Nav */}
